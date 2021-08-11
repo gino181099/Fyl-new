@@ -872,6 +872,9 @@ html body [data-ca3_iconfont="ETmodules"]::before {
   margin-left: 5px;
   margin-right: 5px;
 }
+.faces__footer svg:hover{
+  transform: scale(1.2);
+}
 .copy__footer {
   width: 80%;
   margin: auto;
@@ -905,11 +908,21 @@ html body [data-ca3_iconfont="ETmodules"]::before {
 .nav__footer ul li {
   padding-bottom: 5px;
 }
-@media (max-width: 885px){
+@media (max-width: 890px){
   .nav__footer div:nth-child(4){
-    width: 100%;
+    width: 90%;
   }
 }
+@media (max-width: 800px){
+  .nav__footer div:nth-child(4){
+    width: 95%;
+  }
+}
+  @media (max-width: 700px){
+    .nav__footer div:nth-child(4){
+      width: 100%;
+    }
+  }
 
 @media (max-width: 610px){
   .nav__footer div{
