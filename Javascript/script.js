@@ -181,7 +181,8 @@ const tl3 = gsap.timeline({
     trigger: ".inner",
     start: "top top",
     scrub: true,
-    end: "200% bottom"
+    end: "200% bottom",
+    pin: true
   }
 });
 tl3
