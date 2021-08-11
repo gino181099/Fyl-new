@@ -718,6 +718,11 @@ html body [data-ca3_iconfont="ETmodules"]::before {
   font-size: 18px;
   padding-bottom: 16px;
 }
+@media (max-width: 380px){
+  .swiper-slide .swiper-content p {
+    font-size: 15px;
+  }
+}
 .swiper-slide .swiper-content a{
   text-decoration: none;
   color: #458FFF;
@@ -849,6 +854,9 @@ html body [data-ca3_iconfont="ETmodules"]::before {
   font-weight: 200;
   color: #ccc;
 }
+.nav__footer ul li a:hover{
+  color: #00a3ff;
+}
 .nav__footer p {
   font-weight: 200;
   color: #ccc;
@@ -870,7 +878,24 @@ html body [data-ca3_iconfont="ETmodules"]::before {
   text-align: center;
   max-width: 1300px;
 }
-
+.numbers a{
+  cursor: pointer;
+  font-weight: 200;
+  color: #ccc;
+  text-decoration: none;
+}
+.numbers a:hover{
+  color: #00a3ff;
+}
+.contact-us a{
+  cursor: pointer;
+  font-weight: 200;
+  color: #ccc;
+  text-decoration: none;
+}
+.contact-us a:hover{
+  color: #00a3ff;
+}
 .numbers p span {
   font-weight: 400;
 }
