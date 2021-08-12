@@ -552,19 +552,19 @@ html body [data-ca3_iconfont="ETmodules"]::before {
   color: #458FFF;
 }
 #car-1 {
-  background-image: url(../img/carousel1.jpg);
+  background-image: url(../img/carousel1.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 #car-2 {
-  background-image: url(../img/carousel2.jpg);
+  background-image: url(../img/carousel2.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 #car-3 {
-  background-image: url(../img/carousel3.jpg);
+  background-image: url(../img/carousel3.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
