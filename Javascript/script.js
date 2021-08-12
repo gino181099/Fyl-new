@@ -17,10 +17,11 @@ const six = document.querySelector("#six");
 const sixt = document.querySelector("#sixt");
 const bg = document.querySelector("#bg");
 const arrow = document.querySelector(".ca3-scroll-down-link");
+
+//Animación del avión
 const tl = gsap.timeline({
   scrollTrigger: {
     trigger: ".avion",
-    // scrub: true,
     start: "80px top",
     pin: true,
     end: "bottom bottom",
@@ -33,94 +34,49 @@ tl
   .to(arrow, { autoAlpha: 1, duration: 0.00001 })
   .to(arrow, { autoAlpha: 0, duration: 0.00001 })
   .to(".pl3", { opacity: 1, duration: 0.1 })
-  // .to(".pl4", { opacity: 1, duration: 0.1 })
   .to(".pl5", { opacity: 1, duration: 0.1 })
-  // .to(".pl6", { opacity: 1, duration: 0.1 })
   .to(".pl7", { opacity: 1, duration: 0.1 })
-  // .to(".pl8", { opacity: 1, duration: 0.1 })
   .to(".pl9", { opacity: 1, duration: 0.1 })
-  // .to(".pl10", { opacity: 1, duration: 0.1 })
   .to(".pl11", { opacity: 1, duration: 0.1 })
-  // .to(".pl12", { opacity: 1, duration: 0.1 })
   .to(".pl13", { opacity: 1, duration: 0.1 })
-  // .to(".pl14", { opacity: 1, duration: 0.1 })
   .to(".pl15", { opacity: 1, duration: 0.1 })
-  // .to(".pl16", { opacity: 1, duration: 0.1 })
   .to(".pl17", { opacity: 1, duration: 0.1 })
-  // .to(".pl18", { opacity: 1, duration: 0.1 })
   .to(".pl19", { opacity: 1, duration: 0.1 })
-  // .to(".pl20", { opacity: 1, duration: 0.1 })
   .to(".pl21", { opacity: 1, duration: 0.1 })
-  // .to(".pl22", { opacity: 1, duration: 0.1 })
   .to(".pl23", { opacity: 1, duration: 0.1 })
-  // .to(".pl24", { opacity: 1, duration: 0.1 })
   .to(".pl25", { opacity: 1, duration: 0.1 })
-  // .to(".pl26", { opacity: 1, duration: 0.1 })
   .to(".pl27", { opacity: 1, duration: 0.1 })
-  // .to(".pl28", { opacity: 1, duration: 0.1 })
   .to(".pl29", { opacity: 1, duration: 0.1 })
-  // .to(".pl30", { opacity: 1, duration: 0.1 })
   .to(".pl31", { opacity: 1, duration: 0.1 })
-  // .to(".pl32", { opacity: 1, duration: 0.1 })
   .to(".pl33", { opacity: 1, duration: 0.1 })
-  // .to(".pl34", { opacity: 1, duration: 0.1 })
   .to(".pl35", { opacity: 1, duration: 0.1 })
-  // .to(".pl36", { opacity: 1, duration: 0.1 })
-
-  // .to(title, { opacity: 1, duration: 1 })
-  // .to(d1, { opacity: 1, duration: 1 })
-  // .to(d2, { opacity: 1, duration: 1 })
-
   .to(".pl37", { opacity: 1, duration: 0.1 })
-  // .to(".pl38", { opacity: 1, duration: 0.1 })
   .to(".pl39", { opacity: 1, duration: 0.1 })
-  // .to(".pl40", { opacity: 1, duration: 0.1 })
   .to(".pl41", { opacity: 1, duration: 0.1 })
-  // .to(".pl42", { opacity: 1, duration: 0.1 })
   .to(".pl43", { opacity: 1, duration: 0.1 })
-  // .to(".pl44", { opacity: 1, duration: 0.1 })
   .to(".pl45", { opacity: 1, duration: 0.1 })
-  // .to(".pl46", { opacity: 1, duration: 0.1 })
   .to(".pl47", { opacity: 1, duration: 0.1 })
-  // .to(".pl48", { opacity: 1, duration: 0.1 })
   .to(".pl49", { opacity: 1, duration: 0.1 })
-  // .to(".pl50", { opacity: 1, duration: 0.1 })
   .to(".pl51", { opacity: 1, duration: 0.1 })
-  // .to(".pl52", { opacity: 1, duration: 0.1 })
   .to(".pl53", { opacity: 1, duration: 0.1 })
-  // .to(".pl54", { opacity: 1, duration: 0.1 })
   .to(".pl55", { opacity: 1, duration: 0.1 })
-  // .to(".pl56", { opacity: 1, duration: 0.1 })
   .to(".pl57", { opacity: 1, duration: 0.1 })
-  // .to(".pl58", { opacity: 1, duration: 0.1 })
   .to(".pl59", { opacity: 1, duration: 0.1 })
-  // .to(".pl60", { opacity: 1, duration: 0.1 })
   .to(".pl61", { opacity: 1, duration: 0.1 })
-  // .to(".pl62", { opacity: 1, duration: 0.1 })
   .to(".pl63", { opacity: 1, duration: 0.1 })
-  // .to(".pl64", { opacity: 1, duration: 0.1 })
   .to(".pl65", { opacity: 1, duration: 0.1 })
-  // .to(".pl66", { opacity: 1, duration: 0.1 })
   .to(".pl67", { opacity: 1, duration: 0.1 })
-  // .to(".pl68", { opacity: 1, duration: 0.1 })
   .to(".pl69", { opacity: 1, duration: 0.1 });
-  // .to(".pl70", { opacity: 1, duration: 0.1 })
-  // .to(".pl71", { opacity: 1, duration: 0.1 })
-  // .to(".pl72", { opacity: 1, duration: 0.1 })
 
-  // .to(title, { opacity: 0, duration: 1 })
-  // .to(d1, { opacity: 0, duration: 1 })
-  // .to(d2, { opacity: 0, duration: 1 });
-
+//Animación del texto inicial
 const tlb = gsap.timeline({
     scrollTrigger: {
       trigger: ".avion",
-      // scrub: true,
       start: "80px top",
       end: "170% bottom",
       pin: true,
       
-    pinSpacing: false,
+    // pinSpacing: false,
     }
 });
 tlb.to(title, { opacity: 1, duration: 2 })
@@ -128,6 +84,8 @@ tlb.to(title, { opacity: 1, duration: 2 })
 .to(".sp2", { opacity: 1, duration: 1 })
 .to(d2, { opacity: 1, duration: 1 });
 
+
+//Animación del teléfono
 /*const tl2 = gsap.timeline({
   scrollTrigger: {
     trigger: ".phone-container",
@@ -172,6 +130,8 @@ tl2
   .to(six, { opacity: 1, duration: 1.5 })
   .to(fivet, { opacity: 0, duration: 2 })
   .to(six, { opacity: 0 });*/
+
+//Fijación del carrusel
 const tl2b = gsap.timeline({
   scrollTrigger: {
     trigger: ".swiper-container",
@@ -179,7 +139,8 @@ const tl2b = gsap.timeline({
     end: "200% bottom",
     pin: true,
   }
-})
+});
+//Animación del interior de avión
 const tl3 = gsap.timeline({
   scrollTrigger: {
     trigger: ".inner",
@@ -190,82 +151,45 @@ const tl3 = gsap.timeline({
   }
 });
 tl3
-  // .to(".in1", { opacity: 1, duration: 0.1 })
   .to(".in2", { opacity: 1, duration: 0.1 })
-  // .to(".in3", { opacity: 1, duration: 0.1 })
   .to(".in4", { opacity: 1, duration: 0.1 })
-  // .to(".in5", { opacity: 1, duration: 0.1 })
   .to(".in6", { opacity: 1, duration: 0.1 })
-  // .to(".in7", { opacity: 1, duration: 0.1 })
   .to(".in8", { opacity: 1, duration: 0.1 })
-  // .to(".in9", { opacity: 1, duration: 0.1 })
   .to(".in10", { opacity: 1, duration: 0.1 })
-  // .to(".in11", { opacity: 1, duration: 0.1 })
   .to(".in12", { opacity: 1, duration: 0.1 })
-  // .to(".in13", { opacity: 1, duration: 0.1 })
   .to(".in14", { opacity: 1, duration: 0.1 })
-  // .to(".in15", { opacity: 1, duration: 0.1 })
   .to(".in16", { opacity: 1, duration: 0.1 })
-  // .to(".in17", { opacity: 1, duration: 0.1 })
   .to(".in18", { opacity: 1, duration: 0.1 })
-  // .to(".in19", { opacity: 1, duration: 0.1 })
   .to(".in20", { opacity: 1, duration: 0.1 })
-  // .to(".in21", { opacity: 1, duration: 0.1 })
   .to(".in22", { opacity: 1, duration: 0.1 })
-  // .to(".in23", { opacity: 1, duration: 0.1 })
   .to(".in24", { opacity: 1, duration: 0.1 })
-  // .to(".in25", { opacity: 1, duration: 0.1 })
   .to(".in26", { opacity: 1, duration: 0.1 })
-  // .to(".in27", { opacity: 1, duration: 0.1 })
   .to(".in28", { opacity: 1, duration: 0.1 })
-  // .to(".in29", { opacity: 1, duration: 0.1 })
   .to(".in30", { opacity: 1, duration: 0.1 })
-
-  // .to(".in31", { opacity: 1, duration: 0.1 })
   .to(".in32", { opacity: 1, duration: 0.1 })
-  // .to(".in33", { opacity: 1, duration: 0.1 })
   .to(".in34", { opacity: 1, duration: 0.1 })
-  // .to(".in35", { opacity: 1, duration: 0.1 })
   .to(".in36", { opacity: 1, duration: 0.1 })
-  // .to(".in37", { opacity: 1, duration: 0.1 })
   .to(".in38", { opacity: 1, duration: 0.1 })
-  // .to(".in39", { opacity: 1, duration: 0.1 })
   .to(".in40", { opacity: 1, duration: 0.1 })
-  // .to(".in41", { opacity: 1, duration: 0.1 })
   .to(".in42", { opacity: 1, duration: 0.1 })
-  // .to(".in43", { opacity: 1, duration: 0.1 })
   .to(".in44", { opacity: 1, duration: 0.1 })
-  // .to(".in45", { opacity: 1, duration: 0.1 })
   .to(".in46", { opacity: 1, duration: 0.1 })
-  // .to(".in47", { opacity: 1, duration: 0.1 })
   .to(".in48", { opacity: 1, duration: 0.1 })
-  // .to(".in49", { opacity: 1, duration: 0.1 })
   .to(".in50", { opacity: 1, duration: 0.1 })
-  // .to(".in51", { opacity: 1, duration: 0.1 })
   .to(".in52", { opacity: 1, duration: 0.1 })
-  // .to(".in53", { opacity: 1, duration: 0.1 })
   .to(".in54", { opacity: 1, duration: 0.1 })
-  // .to(".in55", { opacity: 1, duration: 0.1 })
   .to(".in56", { opacity: 1, duration: 0.1 })
-  // .to(".in57", { opacity: 1, duration: 0.1 })
   .to(".in58", { opacity: 1, duration: 0.1 })
-  // .to(".in59", { opacity: 1, duration: 0.1 })
   .to(".in60", { opacity: 1, duration: 0.1 })
-  // .to(".in61", { opacity: 1, duration: 0.1 })
   .to(".in62", { opacity: 1, duration: 0.1 })
-  // .to(".in63", { opacity: 1, duration: 0.1 })
   .to(".in64", { opacity: 1, duration: 0.1 })
-  // .to(".in65", { opacity: 1, duration: 0.1 })
   .to(".in66", { opacity: 1, duration: 0.1 })
-  // .to(".in67", { opacity: 1, duration: 0.1 })
   .to(".in68", { opacity: 1, duration: 0.1 })
-  // .to(".in69", { opacity: 1, duration: 0.1 })
   .to(".in70", { opacity: 1, duration: 0.1 })
-  // .to(".in71", { opacity: 1, duration: 0.1 })
   .to(".in72", { opacity: 1, duration: 0.1 });
 
 
-//menu
+//Funcionamiento del menú
 window.addEventListener("scroll", function () {
   var header = document.querySelector("header");
   header.classList.toggle("sticky", window.scrollY > 0);
@@ -278,7 +202,9 @@ function toggleMenu() {
   menu.classList.toggle("active");
 }
 
-// import i18next from 'i18next';
+
+
+// Selector de idiomas;
 
 i18next.init(
   {
@@ -360,7 +286,10 @@ i18next.on("languageChanged", () => {
   updateContent();
 });
 
-// Código del select
+
+
+
+// Código del select personalizado
 var x, i, j, l, ll, selElmnt, a, b, c;
 /*look for any elements with the class "custom-select":*/
 x = document.getElementsByClassName("custom-select");

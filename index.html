@@ -5,16 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Static Template</title>
-    <!-- Link Swiper's CSS -->
+    <!-- Carrusel CSS -->
     <link
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
+    <!-- Animaciones del Carrusel -->
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css'>
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    
+    <!-- Menu -->
     <header>
       <div class="header__container">
       <a class="logo">Logo</a>
@@ -40,23 +41,19 @@
             Contact
           </a>
         </li>
+        <!-- Selector de idiomas en teléfonos -->
         <div class="custom-select mobile" style="width:120px;">
           <select onchange="changeLng(value);">
-            <option value="en" >EN</option>
-            <option value="en" onclick="changeLng(en);">EN</option>
-            <option value="es" ><a onclick="changeLng(es);">ES</a></option>
+            <option value="en">EN</option>
+            <option value="en">EN</option>
+            <option value="es">ES</option>
             <option value="fr">FR</option>
             <option value="pt">PT</option>
             <option value="it">IT</option>
           </select>
         </div>
-        <!-- <li class="mobile"><select class="language" onchange="changeLng(value);">
-            <option value="en" >EN</option> 
-            <option value="es" >ES</option> 
-            <option value="de" >DE</option> 
-            <option value="fr" >FR</option> 
-        </select></li> -->
       </ul>
+      <!-- Selector de idiomas en escritorio -->
       <div class="custom-select desktop" style="width:120px;">
         <select onchange="changeLng(value);">
           <option value="en">EN</option>
@@ -67,97 +64,54 @@
           <option value="it">IT</option>
         </select>
       </div>
-      <!-- <select class="custom-select language select" onchange="changeLng(value);">
-        <option value="en" >EN</option> 
-        <option value="es" >ES</option> 
-        <option value="de" >DE</option> 
-        <option value="fr" >FR</option> 
-      </select> -->
     </div>
     </header>
   </div>
-    <!-- Scroll Down -->
-    <!-- <div class="vacio"></div> -->
+
+
+
+
+  <!-- Flecha que indica hacia abajo -->
     <a class="ca3-scroll-down-link ca3-scroll-down-arrow" data-ca3_iconfont="ETmodules" data-ca3_icon="" href="#an-1" id="arrow"></a>
+
+
 <!-- Animación del avión --> 
     <div class="avion">
-      <!-- <img src="img/an-1/0001.jpg" class="pl1" />
-          <img src="img/an-1/0002.jpg" class="pl2" /> -->
           <img src="img/an-1/0003.jpg" class="pl3" />
-          <!-- <img src="img/an-1/0004.jpg" class="pl4" /> -->
           <img src="img/an-1/0005.jpg" class="pl5" />
-          <!-- <img src="img/an-1/0006.jpg" class="pl6" /> -->
           <img src="img/an-1/0007.jpg" class="pl7" />
-          <!-- <img src="img/an-1/0008.jpg" class="pl8" /> -->
           <img src="img/an-1/0009.jpg" class="pl9" />
-          <!-- <img src="img/an-1/0010.jpg" class="pl10" /> -->
           <img src="img/an-1/0011.jpg" class="pl11" />
-          <!-- <img src="img/an-1/0012.jpg" class="pl12" /> -->
-
           <img src="img/an-1/0013.jpg" class="pl13" /> 
-          <!-- <img src="img/an-1/0014.jpg" class="pl14" /> -->
           <img src="img/an-1/0015.jpg" class="pl15" />
-          <!-- <img src="img/an-1/0016.jpg" class="pl16" /> -->
           <img src="img/an-1/0017.jpg" class="pl17" />
-          <!-- <img src="img/an-1/0018.jpg" class="pl18" /> -->
           <img src="img/an-1/0019.jpg" class="pl19" />
-          <!-- <img src="img/an-1/0020.jpg" class="pl20" /> -->
           <img src="img/an-1/0021.jpg" class="pl21" />
-          <!-- <img src="img/an-1/0022.jpg" class="pl22" /> -->
           <img src="img/an-1/0023.jpg" class="pl23" />
-          <!-- <img src="img/an-1/0024.jpg" class="pl24" /> -->
-
           <img src="img/an-1/0025.jpg" class="pl25" />
-          <!-- <img src="img/an-1/0026.jpg" class="pl26" /> -->
           <img src="img/an-1/0027.jpg" class="pl27" />
-          <!-- <img src="img/an-1/0028.jpg" class="pl28" /> -->
           <img src="img/an-1/0029.jpg" class="pl29" />
-          <!-- <img src="img/an-1/0030.jpg" class="pl30" /> -->
           <img src="img/an-1/0031.jpg" class="pl31" />
-          <!-- <img src="img/an-1/0032.jpg" class="pl32" /> -->
           <img src="img/an-1/0033.jpg" class="pl33" />
-          <!-- <img src="img/an-1/0034.jpg" class="pl34" /> -->
           <img src="img/an-1/0035.jpg" class="pl35" />
-          <!-- <img src="img/an-1/0036.jpg" class="pl36" /> -->
-
           <img src="img/an-1/0037.jpg" class="pl37" />
-          <!-- <img src="img/an-1/0038.jpg" class="pl38" /> -->
           <img src="img/an-1/0039.jpg" class="pl39" />
-          <!-- <img src="img/an-1/0040.jpg" class="pl40" /> -->
           <img src="img/an-1/0041.jpg" class="pl41" />
-          <!-- <img src="img/an-1/0042.jpg" class="pl42" /> -->
           <img src="img/an-1/0043.jpg" class="pl43" />
-          <!-- <img src="img/an-1/0044.jpg" class="pl44" /> -->
           <img src="img/an-1/0045.jpg" class="pl45" />
-          <!-- <img src="img/an-1/0046.jpg" class="pl46" /> -->
           <img src="img/an-1/0047.jpg" class="pl47" />
-          <!-- <img src="img/an-1/0048.jpg" class="pl48" /> -->
-
           <img src="img/an-1/0049.jpg" class="pl49" />
-          <!-- <img src="img/an-1/0050.jpg" class="pl50" /> -->
           <img src="img/an-1/0051.jpg" class="pl51" />
-          <!-- <img src="img/an-1/0052.jpg" class="pl52" /> -->
           <img src="img/an-1/0053.jpg" class="pl53" />
-          <!-- <img src="img/an-1/0054.jpg" class="pl54" /> -->
           <img src="img/an-1/0055.jpg" class="pl55" />
-          <!-- <img src="img/an-1/0056.jpg" class="pl56" /> -->
           <img src="img/an-1/0057.jpg" class="pl57" />
-          <!-- <img src="img/an-1/0058.jpg" class="pl58" /> -->
           <img src="img/an-1/0059.jpg" class="pl59" />
-          <!-- <img src="img/an-1/0060.jpg" class="pl60" />  -->
- 
           <img src="img/an-1/0061.jpg" class="pl61" />
-          <!-- <img src="img/an-1/0062.jpg" class="pl62" /> -->
           <img src="img/an-1/0063.jpg" class="pl63" />
-          <!-- <img src="img/an-1/0064.jpg" class="pl64" /> -->
           <img src="img/an-1/0065.jpg" class="pl65" />
-          <!-- <img src="img/an-1/0066.jpg" class="pl66" /> -->
           <img src="img/an-1/0067.jpg" class="pl67" />
-          <!-- <img src="img/an-1/0068.jpg" class="pl68" /> -->
           <img src="img/an-1/0069.jpg" class="pl69" />
-          <!-- <img src="img/an-1/0070.jpg" class="pl70" /> -->
           <img src="img/an-1/0071.jpg" class="pl71" />
-          <!-- <img src="img/an-1/0072.jpg" class="pl72" /> -->
           <div class="content__home">
             <h1 class="title__home" id="output"></h1>
             <p class="description1__home" id="_p1">
@@ -261,85 +215,49 @@
         </div>
       </div>
       <div class="swiper-pagination"></div>
-      <!-- <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div> -->
     </div>
-<!-- Imagen Fija -->
+
+<!-- Interior del avión -->
     <div class="inner">
       <img src="img/degradado.webp" class="degradado"  alt="">
-      <!-- <img class="in1" src="img/an-3/0001.webp" alt=""> -->
       <img class="in2" src="img/an-3/0002.webp" alt="">
-      <!-- <img class="in3" src="img/an-3/0003.webp" alt=""> -->
       <img class="in4" src="img/an-3/0004.webp" alt="">
-      <!-- <img class="in5" src="img/an-3/0005.webp" alt=""> -->
       <img class="in6" src="img/an-3/0006.webp" alt="">
-      <!-- <img class="in7" src="img/an-3/0007.webp" alt=""> -->
       <img class="in8" src="img/an-3/0008.webp" alt="">
-      <!-- <img class="in9" src="img/an-3/0009.webp" alt=""> -->
       <img class="in10" src="img/an-3/0010.webp" alt="">
-      <!-- <img class="in11" src="img/an-3/0011.webp" alt=""> -->
       <img class="in12" src="img/an-3/0012.webp" alt="">
-      <!-- <img class="in13" src="img/an-3/0013.webp" alt=""> -->
       <img class="in14" src="img/an-3/0014.webp" alt="">
-      <!-- <img class="in15" src="img/an-3/0015.webp" alt=""> -->
       <img class="in16" src="img/an-3/0016.webp" alt="">
-      <!-- <img class="in17" src="img/an-3/0017.webp" alt=""> -->
       <img class="in18" src="img/an-3/0018.webp" alt="">
-      <!-- <img class="in19" src="img/an-3/0019.webp" alt=""> -->
       <img class="in20" src="img/an-3/0020.webp" alt="">
-      <!-- <img class="in21" src="img/an-3/0021.webp" alt=""> -->
       <img class="in22" src="img/an-3/0022.webp" alt="">
-      <!-- <img class="in23" src="img/an-3/0023.webp" alt=""> -->
       <img class="in24" src="img/an-3/0024.webp" alt="">
-      <!-- <img class="in25" src="img/an-3/0025.webp" alt=""> -->
       <img class="in26" src="img/an-3/0026.webp" alt="">
-      <!-- <img class="in27" src="img/an-3/0027.webp" alt=""> -->
       <img class="in28" src="img/an-3/0028.webp" alt="">
-      <!-- <img class="in29" src="img/an-3/0029.webp" alt=""> -->
       <img class="in30" src="img/an-3/0030.webp" alt="">
-      <!-- <img class="in31" src="img/an-3/0031.webp" alt=""> -->
       <img class="in32" src="img/an-3/0032.webp" alt="">
-      <!-- <img class="in33" src="img/an-3/0033.webp" alt=""> -->
       <img class="in34" src="img/an-3/0034.webp" alt="">
-      <!-- <img class="in35" src="img/an-3/0035.webp" alt=""> -->
       <img class="in36" src="img/an-3/0036.webp" alt="">
-      <!-- <img class="in37" src="img/an-3/0037.webp" alt=""> -->
       <img class="in38" src="img/an-3/0038.webp" alt="">
-      <!-- <img class="in39" src="img/an-3/0039.webp" alt=""> -->
       <img class="in40" src="img/an-3/0040.webp" alt="">
-      <!-- <img class="in41" src="img/an-3/0041.webp" alt=""> -->
       <img class="in42" src="img/an-3/0042.webp" alt="">
-      <!-- <img class="in43" src="img/an-3/0043.webp" alt=""> -->
       <img class="in44" src="img/an-3/0044.webp" alt="">
-      <!-- <img class="in45" src="img/an-3/0045.webp" alt=""> -->
       <img class="in46" src="img/an-3/0046.webp" alt="">
-      <!-- <img class="in47" src="img/an-3/0047.webp" alt=""> -->
       <img class="in48" src="img/an-3/0048.webp" alt="">
-      <!-- <img class="in49" src="img/an-3/0049.webp" alt=""> -->
       <img class="in50" src="img/an-3/0050.webp" alt="">
-      <!-- <img class="in51" src="img/an-3/0051.webp" alt=""> -->
       <img class="in52" src="img/an-3/0052.webp" alt="">
-      <!-- <img class="in53" src="img/an-3/0053.webp" alt=""> -->
       <img class="in54" src="img/an-3/0054.webp" alt="">
-      <!-- <img class="in55" src="img/an-3/0055.webp" alt=""> -->
       <img class="in56" src="img/an-3/0056.webp" alt="">
-      <!-- <img class="in57" src="img/an-3/0057.webp" alt=""> -->
       <img class="in58" src="img/an-3/0058.webp" alt="">
-      <!-- <img class="in59" src="img/an-3/0059.webp" alt=""> -->
       <img class="in60" src="img/an-3/0060.webp" alt="">
-      <!-- <img class="in61" src="img/an-3/0061.webp" alt=""> -->
       <img class="in62" src="img/an-3/0062.webp" alt="">
-      <!-- <img class="in63" src="img/an-3/0063.webp" alt=""> -->
       <img class="in64" src="img/an-3/0064.webp" alt="">
-      <!-- <img class="in65" src="img/an-3/0065.webp" alt=""> -->
       <img class="in66" src="img/an-3/0066.webp" alt="">
-      <!-- <img class="in67" src="img/an-3/0067.webp" alt=""> -->
       <img class="in68" src="img/an-3/0068.webp" alt="">
-      <!-- <img class="in69" src="img/an-3/0069.webp" alt=""> -->
       <img class="in70" src="img/an-3/0070.webp" alt="">
-      <!-- <img class="in71" src="img/an-3/0071.webp" alt=""> -->
       <img class="in72" src="img/an-3/0072.jpg" alt="">
     </div>
+    
 <!-- Download -->
     <div class="download">
       <div class="apps__download">
@@ -347,6 +265,7 @@
       </div>
       <div class="description__download"><h3>Download now and start<br/> flying with us.</h3></div>
     </div>
+
     <!-- Footer -->
     <div class="contenedo__footer">
     <footer class="footer">
@@ -445,27 +364,10 @@
       <div class="copy__footer"><p>Copyright 2021 FlyBlue. FlyBlue, BlueHorizon Group LLC and it’s subsidiaries are registered trademarks. FlyBlue acts as a broker and all flights are operated by registered operators under FAA PART 135, 121 or equivalent to the country of registration All the information contained on this website is subject to revision without previous notice. All the information managed by FlyBlue is privately stored taking all the viable measures to protect the data, according to international standars. All the benefits obtained by our subscriptions may change after a period is accomplished and may vary according the geographical location. For any inquire contact us 24/7, we are happy to help you.</p></div>
     </footer>
   </div>
-<!-- Contact -->
-    <!-- <div class="contact">
-      
-      <form action="">
-          <h2>Contact us</h2>
-        <div class="l__contact">
-          
-        <input type="text" id="name" placeholder="Name">
-        
-        <input type="email" id="email" placeholder="Email">
-        
-        <input type="text" id="phone" placeholder="Phone">
-      </div>
-      <div class="r__contact">
-        <textarea id="message" placeholder="Your message"></textarea>
-      </div>
-      <div class="btn__contact">
-        <input type="submit" value="Send">
-      </div>
-      </form>
-    </div> -->
+
+
+
+<!-- GSAP y ScrollTrigger -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"
@@ -473,24 +375,19 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <!-- i18n -->
+    <!-- i18n, selector de idiomas -->
     <script src="https://unpkg.com/i18next/i18next.js"></script>
 <script src="https://unpkg.com/i18next-http-backend/i18nextHttpBackend.js"></script>
 <script src="https://unpkg.com/i18next-browser-languagedetector/i18nextBrowserLanguageDetector.js"></script>
-     <!-- Swiper JS -->
+     <!-- Carrusel JS -->
      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
      
 
-     <!-- Initialize Swiper -->
+     <!-- Inicializando el carrusel -->
      <script>
-       var swiper = new Swiper(".mySwiper", {
+       const swiper = new Swiper(".mySwiper", {
     speed:1000,
 		direction: 'vertical',
-		// navigation: 
-		// {
-		//   nextEl: '.swiper-button-next',
-		//   prevEl: '.swiper-button-prev',
-		// },
     pagination: {
           el: ".swiper-pagination",
           clickable: true,
