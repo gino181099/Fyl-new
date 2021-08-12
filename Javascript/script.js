@@ -26,7 +26,7 @@ const tl = gsap.timeline({
     pin: true,
     end: "bottom bottom",
     
-    pinSpacing: false,
+    // pinSpacing: false,
   }
 });
 
