@@ -23,7 +23,9 @@ const tl = gsap.timeline({
     // scrub: true,
     start: "80px top",
     pin: true,
-    end: "bottom bottom"
+    end: "bottom bottom",
+    
+    pinSpacing: false,
   }
 });
 
@@ -116,7 +118,9 @@ const tlb = gsap.timeline({
       // scrub: true,
       start: "80px top",
       end: "170% bottom",
-      pin: true
+      pin: true,
+      
+    pinSpacing: false,
     }
 });
 tlb.to(title, { opacity: 1, duration: 2 })
@@ -173,7 +177,7 @@ const tl2b = gsap.timeline({
     trigger: ".swiper-container",
     start: "center center",
     end: "200% bottom",
-    pin: true
+    pin: true,
   }
 })
 const tl3 = gsap.timeline({
