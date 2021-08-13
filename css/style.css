@@ -331,6 +331,9 @@ html body [data-ca3_iconfont="ETmodules"]::before {
   min-height: 100vh;
   height: 100vh;
 }
+video{
+  max-width: 100%;
+}
 .container2 {
   display: grid;
   color: white;

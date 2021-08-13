@@ -86,17 +86,19 @@ tlb.to(title, { opacity: 1, duration: 2 })
 
 
 //Animación del teléfono
-/*const tl2 = gsap.timeline({
+const tl2 = gsap.timeline({
   scrollTrigger: {
     trigger: ".phone-container",
-    // markers: true,
+    markers: true,
+    scrub: true,
     start: "top top",
-    end: "100% top",
-    pin: true
+    end: "600% bottom",
+    pin: true,
+    
   },
-  onComplete: function () {
-    tl2.play("start");
-  }
+  // onComplete: function () {
+  //   tl2.play("start");
+  // }
   // repeat: -1
 });
 tl2
@@ -107,7 +109,7 @@ tl2
     opacity: 1
   })
   .to(one, { opacity: 0, duration: 0.001 })
-  .add("start")
+  // .add("start")
   .to(two, { opacity: 1, duration: 1.5 })
   .to(twot, { opacity: 1, duration: 1.5 })
   .to(twot, { opacity: 0, duration: 2 })
@@ -129,7 +131,7 @@ tl2
   .to(five, { opacity: 0, duration: 0.001 })
   .to(six, { opacity: 1, duration: 1.5 })
   .to(fivet, { opacity: 0, duration: 2 })
-  .to(six, { opacity: 0 });*/
+  .to(six, { opacity: 0 });
 
 //Fijación del carrusel
 const tl2b = gsap.timeline({
