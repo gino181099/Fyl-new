@@ -233,8 +233,6 @@ i18next.init(
             "Choose your favourite aircraft and book your flight. We will take charge of the rest.",
           app4:
             "You can also subscribe, earn miles, get discounts, free seats, travel insurance, hotels and more.",
-          app5:
-            "You can also subscribe, earn miles, get discounts, free seats, travel insurance, hotels and more.",
             cp1: "Because our planet matters, we take actions to offset the carbon print of every flight. We are becoming carbon neutral by 2027, <a href>learn how.</a>",
             ct2: "Comfort, privacy and speed.", 
             cp2: "With a modern fleet available worldwide, we bring you the possibility of booking a flight at any time and with the best support. Wherever you need to get, we will take you while providing the best onboard service to you.",
@@ -251,6 +249,105 @@ i18next.init(
             num3: "Europe, Asia & Oceania"
         }
       },
+      fr:{
+        translation: {
+          h1: "Bienvenue chez Fly Blue",
+          home: "Début",
+          about: "Nous",
+          partners: "Sponsors",
+          contact: "Contact",
+          sp1: "Volons ensemble, ",
+          sp2:"où vous voulez",
+          sp3: "quand vous voulez.",
+          app1:
+            "Téléchargez Fly Blue, choisissez votre destination et le nombre de passagers.",
+          app2:
+            "Sélectionnez la date de votre voyage et nous trouverons les meilleures options pour vous.",
+          app3:
+            "Choisissez votre avion préféré et réservez votre vol. Nous nous occupons du reste.",
+          app4:
+            "Vous pouvez également vous inscrire, gagner des miles, obtenir des réductions, des sièges gratuits, une assurance voyage, des hôtels et plus encore.",
+          cp1: "Parce que notre planète est importante, nous prenons des mesures pour compenser l'empreinte carbone de chaque vol. Nous deviendrons neutres en carbone d'ici 2027, <a href> découvrez comment. </a>",
+          ct2: "Confort, intimité et rapidité",
+          cp2: "Avec une flotte moderne disponible partout dans le monde, nous vous offrons la possibilité de réserver un vol à tout moment et avec le meilleur accompagnement. Où que vous alliez, nous vous emmènerons tout en vous offrant le meilleur service à bord.",
+          ct3: "Les normes de sécurité les plus élevées et le meilleur service.",
+          cp3: "La sécurité est notre valeur la plus importante, c'est pourquoi chaque vol est effectué conformément aux normes de sécurité internationales les plus élevées tout en étant surveillé depuis notre centre d'opérations 24/7. Nous auditons l'ensemble de notre flotte chaque jour, pour nous assurer que vous obtenez le meilleur avion disponible dans le monde. monde.",
+          description__download: "<h3> Téléchargez maintenant et commencez <br/> à voler avec nous. </h3>",
+          ft1: "Navigation",
+          ft2: "Notre groupe",
+          Investments: "Investissements",
+          joinyourfleet: "Rejoignez votre flotte",
+          ft3: "Nous contacter",
+          num1: "Amérique du Nord",
+          num2: "Amérique latine et Caraïbes",
+          num3: "Europe, Asie et Océanie",
+      }},
+      it:{
+        translation: {
+          h1: "Benvenuti in Fly Blue",
+          home: "Inizio",
+          about: "Noi",
+          partners: "Sponsors",
+          contact: "Contatto",
+          sp1: "Voliamo insieme,",
+          sp2:"dove vuoi,",
+          sp3: "quando vuoi.",
+          app1:
+            "Scarica Fly Blue, scegli la tua destinazione e il numero di passeggeri.",
+          app2:
+            "Seleziona la data del tuo viaggio e troveremo le migliori opzioni per te.",
+          app3:
+            "Scegli il tuo aereo preferito e prenota il tuo volo. Al resto pensiamo noi.",
+          app4:
+            "Puoi anche abbonarti, guadagnare miglia, ottenere sconti, posti gratuiti, assicurazione di viaggio, hotel e altro.",
+          cp1: "Poiché il nostro pianeta è importante, intraprendiamo azioni per compensare l'impronta di carbonio di ogni volo. Stiamo diventando carbon neutral entro il 2027, <a href>impara come.</a>",
+          ct2: "Comfort, privacy e velocità.",
+          cp2: "Con una flotta moderna disponibile in tutto il mondo, ti offriamo la possibilità di prenotare un volo in qualsiasi momento e con il miglior supporto. Ovunque tu abbia bisogno di arrivare, ti porteremo fornendoti il ​​miglior servizio a bordo.",
+          ct3: "I più elevati standard di sicurezza e il miglior servizio.",
+          cp3: "La sicurezza è il nostro valore più importante, ecco perché ogni volo è operato secondo i più alti standard di sicurezza internazionali mentre è monitorato dal nostro centro operativo 24/7. Controlliamo l'intera flotta ogni giorno, per assicurarci di ottenere i migliori aeromobili disponibile in tutto il mondo.",
+          description__download: "<h3>Scarica ora e inizia<br/> a volare con noi.</h3>",
+          ft1: "Mappa del sito",
+          ft2: "Il nostro gruppo",
+          Investments: "Investimenti",
+          joinyourfleet: "Unisciti alla tua flotta",
+          ft3: "Contattaci",
+          num1: "Nord America",
+          num2: "America Latina e Caraibi",
+          num3: "Europa, Asia e Oceania",
+      }},
+      pt:{
+        translation: {
+          h1: "Bem-vindo ao Fly Blue",
+          home: "Iniciar",
+          about: "Nós",
+          partners: "Patrocinadores",
+          contact: "Contato",
+          sp1: "Vamos voar juntos,",
+          sp2:"onde você quiser,",
+          sp3: "quando quiser.",
+          app1:
+            "Baixe Fly Blue, escolha seu destino e a quantidade de passageiros.",
+          app2:
+            "Selecione a data da sua viagem e nós encontraremos as melhores opções para você.",
+          app3:
+            "Escolha o seu avião preferido e reserve o seu voo. Nós cuidamos do resto.",
+          app4:
+            "Você também pode se inscrever, ganhar milhas, obter descontos, assentos grátis, seguro de viagem, hotéis e muito mais.",
+          cp1: "Como nosso planeta é importante, agimos para compensar a pegada de carbono de cada voo. Estaremos nos tornando neutros em carbono até 2027, <a href> saiba como. </a>",
+          ct2: "Conforto, privacidade e rapidez.",
+          cp2: "Com uma frota moderna disponível em todo o mundo, oferecemos-lhe a possibilidade de reservar um voo a qualquer momento e com o melhor apoio. Onde você precisar chegar, nós o levaremos e lhe prestaremos o melhor serviço a bordo.",
+          ct3: "Os mais elevados padrões de segurança e o melhor serviço.",
+          cp3: "A segurança é o nosso valor mais importante, por isso todos os voos são operados de acordo com os mais altos padrões de segurança internacionais e são monitorados por nosso centro de operações 24/7. Verificamos toda a frota todos os dias para garantir que você obtenha as melhores aeronaves disponíveis em todo o mundo.",
+          description__download: "<h3> Baixe agora e comece <br/> a voar conosco. </h3>",
+          ft1: "Mapa do site",
+          ft2: "Nosso grupo",
+          Investments: "Investimentos",
+          joinyourfleet: "Junte-se à sua frota",
+          ft3: "Contate-Nos",
+          num1: "América do Norte",
+          num2: "América Latina e Caribe",
+          num3: "Europa, Ásia e Oceania",
+      }},
       es: {
         translation: {
           h1: "Bienvenido a Fly Blue",
