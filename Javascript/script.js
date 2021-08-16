@@ -619,16 +619,16 @@ let optionHoveredIndex2 = -1;
 
 // Toggle custom select visibility when clicking the box
 elSelectCustomBox2.addEventListener("click", e => {
-  const isClosed = !elSelectCustom2.classList.contains("isActive");
+  const isClosed2 = !elSelectCustom2.classList.contains("isActive");
 
-  if (isClosed) {
-    openSelectCustom();
+  if (isClosed2) {
+    openSelectCustom2();
   } else {
-    closeSelectCustom();
+    closeSelectCustom2();
   }
 });
 
-function openSelectCustom() {
+function openSelectCustom2() {
   elSelectCustom2.classList.add("isActive");
   // Remove aria-hidden in case this was opened by a user
   // who uses AT (e.g. Screen Reader) and a mouse at the same time.
@@ -638,7 +638,7 @@ function openSelectCustom() {
     const optionChecked2Index = customOptsList2.findIndex(
     el => el.getAttribute("data-value") === optionChecked2);
 
-    updateCustomSelectHovered(optionChecked2Index);
+    updateCustomSelectHovered2(optionChecked2Index);
   }
 
   // Add related event listeners
@@ -646,19 +646,19 @@ function openSelectCustom() {
   document.addEventListener("keydown", supportKeyboardNavigation);
 }
 
-function closeSelectCustom() {
+function closeSelectCustom2() {
   elSelectCustom2.classList.remove("isActive");
 
   elSelectCustom2.setAttribute("aria-hidden", true);
 
-  updateCustomSelectHovered(-1);
+  updateCustomSelectHovered2(-1);
 
   // Remove related event listeners
   document.removeEventListener("click", watchClickOutside);
   document.removeEventListener("keydown", supportKeyboardNavigation);
 }
 
-function updateCustomSelectHovered(newIndex) {
+function updateCustomSelectHovered2(newIndex) {
   const prevOption = elSelectCustomOpts2.children[optionHoveredIndex2];
   const option = elSelectCustomOpts2.children[newIndex];
 
@@ -695,7 +695,7 @@ function updateCustomSelectChecked(value, text) {
 function watchClickOutside(e) {
   const didClickedOutside = !elSelectCustom2.contains(event.target);
   if (didClickedOutside) {
-    closeSelectCustom();
+    closeSelectCustom2();
   }
 }
 
@@ -704,13 +704,13 @@ function supportKeyboardNavigation(e) {
   if (event.keyCode === 40 && optionHoveredIndex2 < optionsCount2 - 1) {
     let index = optionHoveredIndex2;
     e.preventDefault(); // prevent page scrolling
-    updateCustomSelectHovered(optionHoveredIndex2 + 1);
+    updateCustomSelectHovered2(optionHoveredIndex2 + 1);
   }
 
   // press up -> go previous
   if (event.keyCode === 38 && optionHoveredIndex2 > 0) {
     e.preventDefault(); // prevent page scrolling
-    updateCustomSelectHovered(optionHoveredIndex2 - 1);
+    updateCustomSelectHovered2(optionHoveredIndex2 - 1);
   }
 
   // press Enter or space -> select the option
@@ -724,12 +724,12 @@ function supportKeyboardNavigation(e) {
       elSelectNative2.value = value;
       updateCustomSelectChecked(value, option.textContent);
     }
-    closeSelectCustom();
+    closeSelectCustom2();
   }
 
   // press ESC -> close selectCustom
   if (event.keyCode === 27) {
-    closeSelectCustom();
+    closeSelectCustom2();
   }
 }
 
@@ -751,11 +751,11 @@ customOptsList2.forEach(function (elOption, index) {
     // Sync native select to have the same value
     elSelectNative.value = value;
     updateCustomSelectChecked(value, e.target.textContent);
-    closeSelectCustom();
+    closeSelectCustom2();
   });
 
   elOption.addEventListener("mouseenter", e => {
-    updateCustomSelectHovered(index);
+    updateCustomSelectHovered2(index);
   });
 
   // TODO: Toggle these event listeners based on selectCustom visibility
