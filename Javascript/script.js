@@ -1,5 +1,6 @@
 gsap.registerPlugin("ScrollTrigger");
 
+
 const d1 = document.querySelector(".description1__home");
 const d2 = document.querySelector(".description2__home");
 const title = document.querySelector(".title__home");
@@ -86,7 +87,7 @@ tlb.to(title, { opacity: 1, duration: 2 })
 
 
 //Animación del teléfono
-const tl2 = gsap.timeline({
+/*const tl2 = gsap.timeline({
   scrollTrigger: {
     trigger: ".phone-container",
     markers: true,
@@ -131,7 +132,7 @@ tl2
   .to(five, { opacity: 0, duration: 0.001 })
   .to(six, { opacity: 1, duration: 1.5 })
   .to(fivet, { opacity: 0, duration: 2 })
-  .to(six, { opacity: 0 });
+  .to(six, { opacity: 0 });*/
 
 //Fijación del carrusel
 const tl2b = gsap.timeline({
@@ -211,7 +212,7 @@ function toggleMenu() {
 i18next.init(
   {
     lng: "en",
-    // debug: true,
+    debug: true,
     resources: {
       en: {
         translation: {
@@ -220,7 +221,9 @@ i18next.init(
           about: "About us",
           partners: "Partners",
           contact: "Contact",
-          // p1: "Let’s fly together, wherever you want, ",
+          sp1: "Let’s fly together, ",
+          sp2: "wherever you want,",
+          sp3: "whenever you want.",
 
           app1:
             "Download Fly Blue, choose your destination and the quantity of passengers.",
@@ -231,12 +234,21 @@ i18next.init(
           app4:
             "You can also subscribe, earn miles, get discounts, free seats, travel insurance, hotels and more.",
           app5:
-            "You can also subscribe, earn miles, get discounts, free seats, travel insurance, hotels and more."
-        }
-      },
-      de: {
-        translation: {
-          h1: "hello welt"
+            "You can also subscribe, earn miles, get discounts, free seats, travel insurance, hotels and more.",
+            cp1: "Because our planet matters, we take actions to offset the carbon print of every flight. We are becoming carbon neutral by 2027, <a href>learn how.</a>",
+            ct2: "Comfort, privacy and speed.", 
+            cp2: "With a modern fleet available worldwide, we bring you the possibility of booking a flight at any time and with the best support. Wherever you need to get, we will take you while providing the best onboard service to you.",
+            ct3: "Highest safety standards and the best service.",
+            cp3: "Safety is our most important value, that is why every flight is operated according to the highest international safety standards while it is monitored from our operations center 24/7. We audit our whole fleet every day, to make sure you get the best aircrafts available around the world.",
+            description__download: "<h3>Download now and start<br/> flying with us.</h3>",
+            ft1: "Site map",
+            ft2: "Our group",
+            Investments: "Investments",
+            joinyourfleet: "Join your fleet",
+            ft3: "Contact us",
+            num1: "North America",
+            num2: "Latin America & Caribbean",
+            num3: "Europe, Asia & Oceania"
         }
       },
       es: {
@@ -246,9 +258,9 @@ i18next.init(
           about: "Nosotros",
           partners: "Patrocinadores",
           contact: "Contacto",
-          p1:
-            "Volemos juntos, donde quieras,<br/><span >cuando quieras.</span> ",
-
+          sp1: "Volemos juntos, ",
+          sp2:"donde quieras",
+          sp3: "cuando quieras.",
           app1:
             "Descarga Fly Blue, elije tu destino y la cantidad de pasajeros.",
           app2:
@@ -256,7 +268,21 @@ i18next.init(
           app3:
             "Elija su avión favorito y reserve su vuelo. Nosotros nos encargamos del resto.",
           app4:
-            "También puede suscribirse, ganar millas, obtener descuentos, asientos gratis, seguro de viaje, hoteles y más."
+            "También puede suscribirse, ganar millas, obtener descuentos, asientos gratis, seguro de viaje, hoteles y más.",
+          cp1: "Debido a que nuestro planeta es importante, tomamos medidas para compensar la huella de carbono de cada vuelo. Nos convertiremos en carbono neutral para 2027, <a href> aprenda cómo. </a>",
+          ct2: "Confort, privacidad y velocidad",
+          cp2: "Con una moderna flota disponible en todo el mundo, te brindamos la posibilidad de reservar un vuelo en cualquier momento y con el mejor soporte. Donde sea que necesite llegar, lo llevaremos mientras le brindamos el mejor servicio a bordo.",
+          ct3: "Los más altos estándares de seguridad y el mejor servicio.",
+          cp3: "La seguridad es nuestro valor más importante, es por eso que cada vuelo se opera de acuerdo con los más altos estándares internacionales de seguridad mientras es monitoreado desde nuestro centro de operaciones 24/7. Auditamos toda nuestra flota todos los días, para asegurarnos de que obtenga las mejores aeronaves disponibles en todo el mundo.",
+          description__download: "<h3>Descarga ahora y comienza <br/> a volar con nosotros.</h3>",
+          ft1: "Navegación",
+          ft2: "Nuestro grupo",
+          Investments: "Inversiones",
+          joinyourfleet: "Únete a tu flota",
+          ft3: "Contáctenos",
+          num1: "Norteamérica",
+          num2: "Latinoamérica y Caribe",
+          num3: "Europa, Asia y Oceanía"
         }
       }
     }
@@ -273,7 +299,30 @@ function updateContent() {
   document.getElementById("_about").innerHTML = i18next.t("about");
   document.getElementById("_partners").innerHTML = i18next.t("partners");
   document.getElementById("_contact").innerHTML = i18next.t("contact");
-  // document.getElementById("_p1").innerHTML = i18next.t("p1");
+  document.querySelector(".sp1").innerHTML = i18next.t("sp1");
+  document.querySelector(".sp2").innerHTML = i18next.t("sp2");
+  document.querySelector(".sp3").innerHTML = i18next.t("sp3");
+  document.querySelector(".cp1").innerHTML = i18next.t("cp1");
+  document.querySelector(".ct2").innerHTML = i18next.t("ct2");
+  document.querySelector(".cp2").innerHTML = i18next.t("cp2");
+  document.querySelector(".ct3").innerHTML = i18next.t("ct3");
+  document.querySelector(".cp3").innerHTML = i18next.t("cp3");
+  document.querySelector(".description__download").innerHTML = i18next.t("description__download");
+  document.querySelector(".ft1").innerHTML = i18next.t("ft1");
+  document.getElementById("_about2").innerHTML = i18next.t("about");
+  document.getElementById("_partners2").innerHTML = i18next.t("partners");
+  document.getElementById("_contact2").innerHTML = i18next.t("contact");
+  document.querySelector(".ft2").innerHTML = i18next.t("ft2");
+  document.querySelector(".Investments").innerHTML = i18next.t("Investments");
+  document.querySelector(".joinyourfleet").innerHTML = i18next.t("joinyourfleet");
+  document.querySelector(".ft3").innerHTML = i18next.t("ft3");
+  document.querySelector(".num1").innerHTML = i18next.t("num1");
+  document.querySelector(".num2").innerHTML = i18next.t("num2");
+  document.querySelector(".num3").innerHTML = i18next.t("num3");
+  
+
+
+
   // document.getElementById("_app1").innerHTML = i18next.t("app1");
   // document.getElementById("_app2").innerHTML = i18next.t("app2");
   // document.getElementById("_app3").innerHTML = i18next.t("app3");
@@ -291,82 +340,326 @@ i18next.on("languageChanged", () => {
 
 
 
-// Código del select personalizado
-var x, i, j, l, ll, selElmnt, a, b, c;
-/*look for any elements with the class "custom-select":*/
-x = document.getElementsByClassName("custom-select");
-l = x.length;
-for (i = 0; i < l; i++) {
-  selElmnt = x[i].getElementsByTagName("select")[0];
-  ll = selElmnt.length;
-  /*for each element, create a new DIV that will act as the selected item:*/
-  a = document.createElement("DIV");
-  a.setAttribute("class", "select-selected");
-  a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
-  x[i].appendChild(a);
-  /*for each element, create a new DIV that will contain the option list:*/
-  b = document.createElement("DIV");
-  b.setAttribute("class", "select-items select-hide");
-  for (j = 1; j < ll; j++) {
-    /*for each option in the original select element,
-    create a new DIV that will act as an option item:*/
-    c = document.createElement("DIV");
-    c.innerHTML = selElmnt.options[j].innerHTML;
-    c.addEventListener("click", function(e) {
-        /*when an item is clicked, update the original select box,
-        and the selected item:*/
-        var y, i, k, s, h, sl, yl;
-        s = this.parentNode.parentNode.getElementsByTagName("select")[0];
-        sl = s.length;
-        h = this.parentNode.previousSibling;
-        for (i = 0; i < sl; i++) {
-          if (s.options[i].innerHTML == this.innerHTML) {
-            s.selectedIndex = i;
-            h.innerHTML = this.innerHTML;
-            y = this.parentNode.getElementsByClassName("same-as-selected");
-            yl = y.length;
-            for (k = 0; k < yl; k++) {
-              y[k].removeAttribute("class");
-            }
-            this.setAttribute("class", "same-as-selected");
-            break;
-          }
-        }
-        h.click();
-    });
-    b.appendChild(c);
+//Custom Select
+/* Features needed to make the selectCustom work for mouse users.
+
+- Toggle custom select visibility when clicking the "box"
+- Update custom select value when clicking in a option
+- Navigate through options when using keyboard up/down
+- Pressing Enter or Space selects the current hovered option
+- Close the select when clicking outside of it
+- Sync both selects values when selecting a option. (native or custom)
+
+*/
+
+const elSelectNative = document.getElementsByClassName("js-selectNative")[0];
+const elSelectCustom = document.getElementsByClassName("js-selectCustom")[0];
+const elSelectCustomBox = elSelectCustom.children[0];
+const elSelectCustomOpts = elSelectCustom.children[1];
+const customOptsList = Array.from(elSelectCustomOpts.children);
+const optionsCount = customOptsList.length;
+const defaultLabel = elSelectCustomBox.getAttribute("data-value");
+
+let optionChecked = "";
+let optionHoveredIndex = -1;
+
+// Toggle custom select visibility when clicking the box
+elSelectCustomBox.addEventListener("click", e => {
+  const isClosed = !elSelectCustom.classList.contains("isActive");
+
+  if (isClosed) {
+    openSelectCustom();
+  } else {
+    closeSelectCustom();
   }
-  x[i].appendChild(b);
-  a.addEventListener("click", function(e) {
-      /*when the select box is clicked, close any other select boxes,
-      and open/close the current select box:*/
-      e.stopPropagation();
-      closeAllSelect(this);
-      this.nextSibling.classList.toggle("select-hide");
-      this.classList.toggle("select-arrow-active");
-    });
+});
+
+function openSelectCustom() {
+  elSelectCustom.classList.add("isActive");
+  // Remove aria-hidden in case this was opened by a user
+  // who uses AT (e.g. Screen Reader) and a mouse at the same time.
+  elSelectCustom.setAttribute("aria-hidden", false);
+
+  if (optionChecked) {
+    const optionCheckedIndex = customOptsList.findIndex(
+    el => el.getAttribute("data-value") === optionChecked);
+
+    updateCustomSelectHovered(optionCheckedIndex);
+  }
+
+  // Add related event listeners
+  document.addEventListener("click", watchClickOutside);
+  document.addEventListener("keydown", supportKeyboardNavigation);
 }
-function closeAllSelect(elmnt) {
-  /*a function that will close all select boxes in the document,
-  except the current select box:*/
-  var x, y, i, xl, yl, arrNo = [];
-  x = document.getElementsByClassName("select-items");
-  y = document.getElementsByClassName("select-selected");
-  xl = x.length;
-  yl = y.length;
-  for (i = 0; i < yl; i++) {
-    if (elmnt == y[i]) {
-      arrNo.push(i)
-    } else {
-      y[i].classList.remove("select-arrow-active");
-    }
+
+function closeSelectCustom() {
+  elSelectCustom.classList.remove("isActive");
+
+  elSelectCustom.setAttribute("aria-hidden", true);
+
+  updateCustomSelectHovered(-1);
+
+  // Remove related event listeners
+  document.removeEventListener("click", watchClickOutside);
+  document.removeEventListener("keydown", supportKeyboardNavigation);
+}
+
+function updateCustomSelectHovered(newIndex) {
+  const prevOption = elSelectCustomOpts.children[optionHoveredIndex];
+  const option = elSelectCustomOpts.children[newIndex];
+
+  if (prevOption) {
+    prevOption.classList.remove("isHover");
   }
-  for (i = 0; i < xl; i++) {
-    if (arrNo.indexOf(i)) {
-      x[i].classList.add("select-hide");
-    }
+  if (option) {
+    option.classList.add("isHover");
+  }
+
+  optionHoveredIndex = newIndex;
+}
+
+function updateCustomSelectChecked(value, text) {
+  const prevValue = optionChecked;
+
+  const elPrevOption = elSelectCustomOpts.querySelector(
+  `[data-value="${prevValue}"`);
+
+  const elOption = elSelectCustomOpts.querySelector(`[data-value="${value}"`);
+
+  if (elPrevOption) {
+    elPrevOption.classList.remove("isActive");
+  }
+
+  if (elOption) {
+    elOption.classList.add("isActive");
+  }
+
+  elSelectCustomBox.textContent = text;
+  optionChecked = value;
+}
+
+function watchClickOutside(e) {
+  const didClickedOutside = !elSelectCustom.contains(event.target);
+  if (didClickedOutside) {
+    closeSelectCustom();
   }
 }
-/*if the user clicks anywhere outside the select box,
-then close all select boxes:*/
-document.addEventListener("click", closeAllSelect);
+
+function supportKeyboardNavigation(e) {
+  // press down -> go next
+  if (event.keyCode === 40 && optionHoveredIndex < optionsCount - 1) {
+    let index = optionHoveredIndex;
+    e.preventDefault(); // prevent page scrolling
+    updateCustomSelectHovered(optionHoveredIndex + 1);
+  }
+
+  // press up -> go previous
+  if (event.keyCode === 38 && optionHoveredIndex > 0) {
+    e.preventDefault(); // prevent page scrolling
+    updateCustomSelectHovered(optionHoveredIndex - 1);
+  }
+
+  // press Enter or space -> select the option
+  if (event.keyCode === 13 || event.keyCode === 32) {
+    e.preventDefault();
+
+    const option = elSelectCustomOpts.children[optionHoveredIndex];
+    const value = option && option.getAttribute("data-value");
+
+    if (value) {
+      elSelectNative.value = value;
+      updateCustomSelectChecked(value, option.textContent);
+    }
+    closeSelectCustom();
+  }
+
+  // press ESC -> close selectCustom
+  if (event.keyCode === 27) {
+    closeSelectCustom();
+  }
+}
+
+// Update selectCustom value when selectNative is changed.
+elSelectNative.addEventListener("change", e => {
+  const value = e.target.value;
+  const elRespectiveCustomOption = elSelectCustomOpts.querySelectorAll(
+  `[data-value="${value}"]`)[
+  0];
+
+  updateCustomSelectChecked(value, elRespectiveCustomOption.textContent);
+});
+
+// Update selectCustom value when an option is clicked or hovered
+customOptsList.forEach(function (elOption, index) {
+  elOption.addEventListener("click", e => {
+    const value = e.target.getAttribute("data-value");
+
+    // Sync native select to have the same value
+    elSelectNative.value = value;
+    updateCustomSelectChecked(value, e.target.textContent);
+    closeSelectCustom();
+  });
+
+  elOption.addEventListener("mouseenter", e => {
+    updateCustomSelectHovered(index);
+  });
+
+  // TODO: Toggle these event listeners based on selectCustom visibility
+});
+
+
+//Segundo select
+const elSelectNative2 = document.getElementsByClassName("segundoNative")[0];
+const elSelectCustom2 = document.getElementsByClassName("segundoCustom")[0];
+const elSelectCustomBox2 = elSelectCustom2.children[0];
+const elSelectCustomOpts2 = elSelectCustom2.children[1];
+const customOptsList2 = Array.from(elSelectCustomOpts2.children);
+const optionsCount2 = customOptsList2.length;
+const defaultLabel2 = elSelectCustomBox2.getAttribute("data-value");
+
+let optionChecked2 = "";
+let optionHoveredIndex2 = -1;
+
+// Toggle custom select visibility when clicking the box
+elSelectCustomBox2.addEventListener("click", e => {
+  const isClosed = !elSelectCustom2.classList.contains("isActive");
+
+  if (isClosed) {
+    openSelectCustom();
+  } else {
+    closeSelectCustom();
+  }
+});
+
+function openSelectCustom() {
+  elSelectCustom2.classList.add("isActive");
+  // Remove aria-hidden in case this was opened by a user
+  // who uses AT (e.g. Screen Reader) and a mouse at the same time.
+  elSelectCustom2.setAttribute("aria-hidden", false);
+
+  if (optionChecked2) {
+    const optionChecked2Index = customOptsList2.findIndex(
+    el => el.getAttribute("data-value") === optionChecked2);
+
+    updateCustomSelectHovered(optionChecked2Index);
+  }
+
+  // Add related event listeners
+  document.addEventListener("click", watchClickOutside);
+  document.addEventListener("keydown", supportKeyboardNavigation);
+}
+
+function closeSelectCustom() {
+  elSelectCustom2.classList.remove("isActive");
+
+  elSelectCustom2.setAttribute("aria-hidden", true);
+
+  updateCustomSelectHovered(-1);
+
+  // Remove related event listeners
+  document.removeEventListener("click", watchClickOutside);
+  document.removeEventListener("keydown", supportKeyboardNavigation);
+}
+
+function updateCustomSelectHovered(newIndex) {
+  const prevOption = elSelectCustomOpts2.children[optionHoveredIndex2];
+  const option = elSelectCustomOpts2.children[newIndex];
+
+  if (prevOption) {
+    prevOption.classList.remove("isHover");
+  }
+  if (option) {
+    option.classList.add("isHover");
+  }
+
+  optionHoveredIndex2 = newIndex;
+}
+
+function updateCustomSelectChecked(value, text) {
+  const prevValue = optionChecked2;
+
+  const elPrevOption = elSelectCustomOpts2.querySelector(
+  `[data-value="${prevValue}"`);
+
+  const elOption = elSelectCustomOpts2.querySelector(`[data-value="${value}"`);
+
+  if (elPrevOption) {
+    elPrevOption.classList.remove("isActive");
+  }
+
+  if (elOption) {
+    elOption.classList.add("isActive");
+  }
+
+  elSelectCustomBox2.textContent = text;
+  optionChecked2 = value;
+}
+
+function watchClickOutside(e) {
+  const didClickedOutside = !elSelectCustom2.contains(event.target);
+  if (didClickedOutside) {
+    closeSelectCustom();
+  }
+}
+
+function supportKeyboardNavigation(e) {
+  // press down -> go next
+  if (event.keyCode === 40 && optionHoveredIndex2 < optionsCount2 - 1) {
+    let index = optionHoveredIndex2;
+    e.preventDefault(); // prevent page scrolling
+    updateCustomSelectHovered(optionHoveredIndex2 + 1);
+  }
+
+  // press up -> go previous
+  if (event.keyCode === 38 && optionHoveredIndex2 > 0) {
+    e.preventDefault(); // prevent page scrolling
+    updateCustomSelectHovered(optionHoveredIndex2 - 1);
+  }
+
+  // press Enter or space -> select the option
+  if (event.keyCode === 13 || event.keyCode === 32) {
+    e.preventDefault();
+
+    const option = elSelectCustomOpts2.children[optionHoveredIndex2];
+    const value = option && option.getAttribute("data-value");
+
+    if (value) {
+      elSelectNative2.value = value;
+      updateCustomSelectChecked(value, option.textContent);
+    }
+    closeSelectCustom();
+  }
+
+  // press ESC -> close selectCustom
+  if (event.keyCode === 27) {
+    closeSelectCustom();
+  }
+}
+
+// Update selectCustom value when selectNative is changed.
+elSelectNative.addEventListener("change", e => {
+  const value = e.target.value;
+  const elRespectiveCustomOption = elSelectCustomOpts2.querySelectorAll(
+  `[data-value="${value}"]`)[
+  0];
+
+  updateCustomSelectChecked(value, elRespectiveCustomOption.textContent);
+});
+
+// Update selectCustom value when an option is clicked or hovered
+customOptsList2.forEach(function (elOption, index) {
+  elOption.addEventListener("click", e => {
+    const value = e.target.getAttribute("data-value");
+
+    // Sync native select to have the same value
+    elSelectNative.value = value;
+    updateCustomSelectChecked(value, e.target.textContent);
+    closeSelectCustom();
+  });
+
+  elOption.addEventListener("mouseenter", e => {
+    updateCustomSelectHovered(index);
+  });
+
+  // TODO: Toggle these event listeners based on selectCustom visibility
+});

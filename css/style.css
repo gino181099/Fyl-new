@@ -12,6 +12,9 @@ body {
   background-color: #000;
   overflow-x: hidden;
 }
+a{
+  text-decoration: none;
+}
 /* Menu */
 header {
  
@@ -124,7 +127,135 @@ header ul li a:hover{
 .mobile{
   display: none;
 }
-.custom-select {
+/* Custom select */
+.selectNative,
+.selectCustom {
+  /* position: relative; */
+  width: 120px;
+  height: 20px;
+  
+  /* height: 4rem; */
+}
+
+.selectCustom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+@media (hover: hover) {
+  .selectCustom {
+    display: block;
+  }
+
+  .selectNative:focus + .selectCustom {
+    display: none;
+  }
+}
+/* Add the focus states too, They matter, always! */
+.selectNative:focus,
+.selectCustom.isActive .selectCustom-trigger {
+  outline: none;
+  /* box-shadow: white 0 0 0 0.2rem, #ff821f 0 0 0 0.4rem; */
+}
+
+.select {
+  position: relative;
+  margin-right: 26px;
+}
+
+.selectLabel {
+  display: block;
+  font-weight: bold;
+  /* margin-bottom: 0.4rem; */
+}
+
+.selectWrapper {
+  position: relative;
+}
+
+.selectNative,
+.selectCustom-trigger {
+  font-size: 16px;
+  background-color: transparent;
+  /* border: 1px solid #6f6f6f; */
+  /* border-radius: 0.4rem; */
+  text-align: center;
+  color: white;
+}
+.selectCustom-trigger:hover{
+  color: #00a3ff;
+}
+.selectNative {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-position-y: 0.8rem;
+  /* padding: 0rem 0.8rem; */
+}
+
+.selectCustom-trigger {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, #151515 50%, rgba(0, 0, 0) 139.58%);
+  color: white;
+  /* padding: 0.8rem 0.8rem; */
+  cursor: pointer;
+}
+/* 
+.selectCustom-trigger:hover {
+  border-color: #8c00ff; 
+} */
+
+.selectCustom-options {
+  position: absolute;
+  /* top: calc(3.8rem + 0.8rem); */
+  left: 0;
+  width: 100%;
+  border: 1px solid #6f6f6f55;
+  border-radius: 0.4rem;
+  background: linear-gradient(180deg, #000 50%, #151515 139.58%);
+  color: white;
+  outline: none;
+  /* box-shadow: 0 0 4px #e9e1f8; */
+  z-index: 1;
+  /* padding: 0.8rem 0; */
+  display: none;
+}
+
+.selectCustom.isActive .selectCustom-options {
+  display: block;
+}
+
+.selectCustom-option {
+  position: relative;
+  /* padding: 0.8rem; */
+  padding: 10px 0px;
+  /* padding-left: 2.5rem; */
+  text-align: center;
+}
+
+.selectCustom-option.isHover,
+.selectCustom-option:hover {
+  /* background-color: #865bd7; */
+  color: #00a3ff;
+  cursor: pointer;
+  
+}
+
+.selectCustom-option:not(:last-of-type)::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  /* border-bottom: 1px solid #d3d3d3; */
+}
+/* .custom-select {
   position: relative;
 
   font-family: Arial;
@@ -164,7 +295,7 @@ header ul li a:hover{
 .select-items div:hover, .same-as-selected {
   background-color: rgba(0, 0, 0, 0.1);
   color: #00a3ff;
-}
+} */
 @media (max-width: 900px) {
   header ul li a {
     width: 80px;
@@ -326,130 +457,6 @@ html body [data-ca3_iconfont="ETmodules"]::before {
 }
 
 /* Animación del teléfono */
-.phone-container {
-  background: #000;
-  min-height: 100vh;
-  height: 100vh;
-}
-video{
-  max-width: 100%;
-}
-.container2 {
-  display: grid;
-  color: white;
-  grid-template-columns: repeat(2, 1fr);
-  height: 100vh;
-}
-.container2:nth-child(2) {
-  transform: translateY(-100vh);
-}
-.container2:nth-child(3) {
-  transform: translateY(-200vh);
-}
-.container2:nth-child(4) {
-  transform: translateY(-300vh);
-}
-.container2:nth-child(5) {
-  transform: translateY(-400vh);
-}
-.container2:nth-child(6) {
-  transform: translateY(-500vh);
-}
-.container2:nth-child(7) {
-  transform: translateY(-600vh);
-}
-.container2:nth-child(7) {
-  grid-template-columns: repeat(1, 1fr);
-}
-.n-front,
-.s-phone,
-.front {
-  margin: auto;
-}
-#bg {
-  position: absolute;
-  bottom: 40%;
-  left: 20%;
-  background: conic-gradient(
-    from 131.11deg at 50.76% 4.67%,
-    #00e29a 0deg,
-    #00a3ff 90deg,
-    #5fffe2 180deg,
-    #00a3ff 270deg,
-    #648f98 326.25deg,
-    #ad00ff 360deg
-  );
-  filter: blur(72px);
-  border-radius: 8px;
-  transform: rotate(-90deg);
-  z-index: -1;
-  height: 150px;
-  opacity: 0;
-}
-@media (max-width: 530px) {
-  #bg {
-    left: 11%;
-  }
-}
-@media (max-width: 470px) {
-  #bg {
-    left: 7%;
-  }
-}
-@media (max-width: 420px) {
-  #bg {
-    left: 0%;
-  }
-}
-@media (max-width: 900px) {
-  #bg {
-    left: 16%;
-  }
-}
-.phone-text {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 80%;
-}
-@media (min-width: 991px) {
-  .phone-text {
-    width: 50%;
-  }
-}
-.blur {
-  background-image: url(blur.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  filter: blur(72px);
-  border-radius: 8px;
-  opacity: 0;
-}
-#one,
-#onet {
-  opacity: 0;
-}
-#two,
-#twot {
-  opacity: 0;
-}
-#three,
-#threet {
-  opacity: 0;
-}
-#four,
-#fourt {
-  opacity: 0;
-}
-#five,
-#fivet {
-  opacity: 0;
-}
-#six,
-#sixt {
-  opacity: 0;
-}
 
 /* Carrusel */
 .swiper-container {
