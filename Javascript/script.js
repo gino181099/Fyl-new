@@ -138,7 +138,7 @@ tl2
 const tl2b = gsap.timeline({
   scrollTrigger: {
     trigger: ".car-container",
-    start: "center center",
+    start: "-30px top",
     end: "200% bottom",
     pin: true,
     scrub: false,
