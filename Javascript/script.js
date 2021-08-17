@@ -137,13 +137,23 @@ tl2
 //Fijación del carrusel
 const tl2b = gsap.timeline({
   scrollTrigger: {
-    trigger: ".swiper-container",
+    trigger: ".car-container",
     start: "center center",
     end: "200% bottom",
     pin: true,
+    scrub: false,
+    pinSpacing: false,
+    
   }
 });
+tl2b
+    .to(".swiper-container", {opacity: 1})
+    .to(".swiper-container", {opacity: 1, 
+      onComplete: () => (document.querySelector('.main__content').classList.remove('is-loading'),
+      document.querySelector('.contenedo__footer').classList.remove('is-loading'),
+      innerAnimacion())});
 //Animación del interior de avión
+function innerAnimacion(){
 const tl3 = gsap.timeline({
   scrollTrigger: {
     trigger: ".inner",
@@ -190,7 +200,7 @@ tl3
   .to(".in68", { opacity: 1, duration: 0.1 })
   .to(".in70", { opacity: 1, duration: 0.1 })
   .to(".in72", { opacity: 1, duration: 0.1 });
-
+}
 
 //Funcionamiento del menú
 window.addEventListener("scroll", function () {
