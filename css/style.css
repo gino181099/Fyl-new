@@ -347,8 +347,6 @@ html body [data-ca3_iconfont="ETmodules"]::before {
   -webkit-animation: ca3_fade_move_down 2s ease-in-out infinite;
   -moz-animation: ca3_fade_move_down 2s ease-in-out infinite;
   animation: ca3_fade_move_down 2s ease-in-out infinite;
-  border: 1px solid white;
-  border-radius: 999px;
 }
 @-webkit-keyframes ca3_fade_move_down {
   0% {

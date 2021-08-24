@@ -91,7 +91,7 @@ gsap.utils.toArray(".swiper-slide").forEach((panel, i) => {
     start: "top top", 
     pin: true, 
     pinSpacing: false,
-    snap: 1 / 3
+    snap: 1 
   });
 });
 
