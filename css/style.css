@@ -550,7 +550,7 @@ html body [data-ca3_iconfont="ETmodules"]::before {
   margin-bottom: 16px;
 }
 .swiper-slide .swiper-content .green {
-  background: linear-gradient(135deg, hsla(130, 100%, 50%, 1) 34%, hsla(130, 100%, 50%, 1) 82%, hsla(130, 89%, 19%, 1) 100%);
+  background: linear-gradient(180deg, hsla(130, 100%, 50%, 1) 20%, hsla(130, 89%, 19%, 1) 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -698,6 +698,7 @@ html body [data-ca3_iconfont="ETmodules"]::before {
   justify-content: center;
   margin: auto;
   flex: 1;
+  padding-top: 35px;
 }
 .nav__footer {
   display: flex;
@@ -726,6 +727,7 @@ html body [data-ca3_iconfont="ETmodules"]::before {
 }
 .nav__footer div h4 {
   margin-bottom: 15px;
+  font-size: 18px;
 }
 .nav__footer ul li a {
   cursor: pointer;

@@ -76,6 +76,8 @@ const tlb = gsap.timeline({
       start: "80px top",
       end: "170% bottom",
       pin: true,
+      pinSpacing: false,
+      span: 1
       
     // pinSpacing: false,
     }
