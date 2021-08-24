@@ -85,6 +85,15 @@ tlb.to(title, { opacity: 1, duration: 2 })
 .to(".sp2", { opacity: 1, duration: 1 })
 .to(d2, { opacity: 1, duration: 1 });
 
+gsap.utils.toArray(".swiper-slide").forEach((panel, i) => {
+  ScrollTrigger.create({
+    trigger: panel,
+    start: "top top", 
+    pin: true, 
+    pinSpacing: false,
+    snap: 1 / 3
+  });
+});
 
 //Animación del teléfono
 /*const tl2 = gsap.timeline({
@@ -135,25 +144,26 @@ tl2
   .to(six, { opacity: 0 });*/
 
 //Fijación del carrusel
-const tl2b = gsap.timeline({
-  scrollTrigger: {
-    trigger: ".car-container",
-    start: "-30px top",
-    end: "200% bottom",
-    pin: true,
-    scrub: false,
-    pinSpacing: false,
+// const tl2b = gsap.timeline({
+//   scrollTrigger: {
+//     trigger: ".car-container",
+//     start: "-30px top",
+//     end: "200% bottom",
+//     pin: true,
+//     scrub: false,
+//     pinSpacing: false,
     
-  }
-});
-tl2b
-    .to(".swiper-container", {opacity: 1})
-    .to(".swiper-container", {opacity: 1, 
-      onComplete: () => (document.querySelector('.main__content').classList.remove('is-loading'),
-      document.querySelector('.contenedo__footer').classList.remove('is-loading'),
-      innerAnimacion())});
+//   }
+// });
+// tl2b
+//     .to(".swiper-container", {opacity: 1})
+//     .to(".swiper-container", {opacity: 1, 
+//       onComplete: () => (document.querySelector('.main__content').classList.remove('is-loading'),
+//       document.querySelector('.contenedo__footer').classList.remove('is-loading'),
+//       innerAnimacion())});
 //Animación del interior de avión
-function innerAnimacion(){
+// function innerAnimacion(){
+ 
 const tl3 = gsap.timeline({
   scrollTrigger: {
     trigger: ".inner",
@@ -200,7 +210,7 @@ tl3
   .to(".in68", { opacity: 1, duration: 0.1 })
   .to(".in70", { opacity: 1, duration: 0.1 })
   .to(".in72", { opacity: 1, duration: 0.1 });
-}
+// }
 
 //Funcionamiento del menú
 window.addEventListener("scroll", function () {
