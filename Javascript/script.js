@@ -23,7 +23,7 @@ const arrow = document.querySelector(".ca3-scroll-down-link");
 const tl = gsap.timeline({
   scrollTrigger: {
     trigger: ".avion",
-    start: "80px top",
+    start: "5px top",
     pin: true,
     end: "bottom bottom",
     
@@ -73,7 +73,7 @@ tl
 const tlb = gsap.timeline({
     scrollTrigger: {
       trigger: ".avion",
-      start: "80px top",
+      start: "5px top",
       end: "200% bottom",
       pin: true,
       pinSpacing: false,
