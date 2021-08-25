@@ -27,7 +27,7 @@ const tl = gsap.timeline({
     pin: true,
     end: "bottom bottom",
     
-    // pinSpacing: false,
+    pinSpacing: false,
   }
 });
 
@@ -74,10 +74,10 @@ const tlb = gsap.timeline({
     scrollTrigger: {
       trigger: ".avion",
       start: "80px top",
-      end: "170% bottom",
+      end: "200% bottom",
       pin: true,
       pinSpacing: false,
-      span: 1
+      snap: 1
       
     // pinSpacing: false,
     }
